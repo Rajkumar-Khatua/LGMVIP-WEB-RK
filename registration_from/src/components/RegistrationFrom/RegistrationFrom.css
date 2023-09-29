@@ -1,0 +1,175 @@
+/* RegistrationForm.css */
+.registration-form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: sticky;
+  top: calc(100vh-60px);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="url"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form-buttons {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.submit {
+  padding: 10px 20px;
+  width: 100%;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+/* Add this to your existing CSS file or modify it as needed */
+.selected-skills {
+  margin-top: 10px;
+}
+
+.clear {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fa1675;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.clear:hover {
+  background-color: #ffffff;
+  color: #fa1675;
+  border: 1px solid #fa1675;
+}
+
+.selected-skills p {
+  font-weight: bold;
+}
+
+.selected-skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.selected-skills li {
+  margin-top: 5px;
+}
+/* RegistrationForm.css */
+
+/* Container for success and error messages */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  margin-top: 20px; /* Add some space between form and messages */
+}
+/* Add this CSS to your RegistrationForm.css file or a separate CSS file */
+
+/* Style the container for the skills checkboxes */
+.skills-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style the label for each skill checkbox */
+.skills-checkbox label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px; /* Adjust the spacing between checkboxes */
+  margin-bottom: 10px; /* Adjust the spacing between rows */
+  font-size: 16px;
+}
+
+/* Style the checkbox input */
+.skills-checkbox input[type="checkbox"] {
+  margin-right: 1px; /* Adjust the spacing between the checkbox and label text */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+/* Style the checkbox when it's checked */
+.skills-checkbox input[type="checkbox"]:checked + span {
+  font-weight: bold; /* Make the label text bold when the checkbox is checked */
+  color: #007bff; /* Change the color of the label text when the checkbox is checked */
+}
+
+/* Style the label text */
+.skills-checkbox label span {
+  transition: color 0.3s; /* Add a smooth color transition effect */
+}
+
+/* Style for success message */
+.success-message {
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* White text color */
+  padding: 10px; /* Padding around the message */
+  margin-bottom: 10px; /* Add some space below the message */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Style for error message */
+.error-message {
+  background-color: #f44336; /* Red background color */
+  color: #fff; /* White text color */
+  padding: 10px; /* Padding around the message */
+  margin-bottom: 10px; /* Add some space below the message */
+  border-radius: 4px; /* Rounded corners */
+}
+@media screen and (max-width: 768px) {
+  .registration-form {
+    width: 100%;
+  }
+}

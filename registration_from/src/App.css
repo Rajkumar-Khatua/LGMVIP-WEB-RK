@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px 10px 10px 20px;
+  background: hsla(180, 33%, 88%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(180, 33%, 88%, 1) 0%,
+    hsla(310, 76%, 82%, 1) 50%,
+    hsla(256, 83%, 72%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(180, 33%, 88%, 1) 0%,
+    hsla(310, 76%, 82%, 1) 50%,
+    hsla(256, 83%, 72%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(180, 33%, 88%, 1) 0%,
+    hsla(310, 76%, 82%, 1) 50%,
+    hsla(256, 83%, 72%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D7EBEB", endColorstr="#F4AFE9", GradientType=1 );
+
+  
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.container :nth-child(1) {
+  flex: 2;
+}
+.container :nth-child(2) {
+  flex: 8;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container :nth-child(1) {
+    flex: 1;
+  }
+  .container :nth-child(2) {
+    flex: 1;
+  }
+  
+}
